@@ -1,0 +1,137 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+::selection{
+    color: rgb(197, 174, 252);
+}
+
+.header{
+    width: 1100px;
+    margin: 1rem auto;
+}
+.Search_result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    /* grid-template: auto / repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+
+.inputFrom{
+    margin: 1rem auto;
+    width: 460px;
+   color: #fff;
+    padding: 1rem;
+}
+.ProjectName{
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.Search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.Search input{
+    height: 52px;
+    width: 440px;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid rgb(92, 91, 91);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.Search ion-icon{
+    position: absolute;
+    right: 1.5rem;
+    color: black;
+    font-size: 27px;
+
+}
+.item{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    overflow: hidden;
+  }
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px ;
+  }
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .title{
+      color: #fff;
+        font-size: 18px; 
+}
+.view-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #404041;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self:flex-start;
+  }
+  .item-data{
+    color: whitesmoke;
+    display: block;
+    margin-top: 10px ;
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+  }
+
+  @media screen and (max-width : 500px){
+     .header{
+         width: 100%;
+         margin: 0;
+     } 
+    .Search_result{
+        grid-template-columns: 1fr;
+    }
+    .item{
+      width: 100%;
+    }
+   img{
+    max-width: 100%;  
+    min-height: 450px;
+    object-fit: cover;
+   }
+   .item-data{
+       width: 90%;
+       
+   }
+   .inputFrom {
+     margin: 0 ;
+     width: 100%;
+    color: #fff;
+    padding: 1rem;
+   }
+  }
